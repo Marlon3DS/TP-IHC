@@ -1,0 +1,156 @@
+﻿
+<!doctype html>
+<html lang="en">
+ 
+ <head>
+    
+  <meta charset="utf-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="description" content="">
+  
+  <meta name="author" content="">
+
+  
+ 
+  <title>Padaria Online</title>
+
+
+ 
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+  <link href="css/carousel.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+ 
+  <style type="text/css">
+ 
+  body {
+
+   padding-top:0px;
+
+  }
+
+  .color_home {
+  background-color:#E6B96B;
+  }
+  .logo_site {
+   
+min-width: 100%;
+
+   height: 120px;
+  }
+
+  #map {
+
+   height: 500px;
+
+   z-index: 999999;
+  
+}
+ 
+  </style>
+  
+</head>
+  
+ <body>
+
+
+    
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 color_home border-bottom shadow-sm">
+   <p class="my-0 mr-md-auto font-weight-normal">
+ 
+    <a class="p-2 text-dark" href="index.html">
+ 
+      <img class="logo_site" src="imagens/logo_site.png" />
+
+    </a>
+
+   </p>
+      
+
+<nav class="my-2 my-md-0 mr-md-3">
+  <a class="p-2 text-dark" href="index.html">Home</a>
+</nav>
+   </div>
+
+    <main role="main"> 
+
+      <div class="py-5 container">
+          
+        <div class="row">
+
+          <div class="col-md-12 order-md-1">
+            
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-10 mb-3">
+                  <input type="email" class="form-control" id="procurar_padaaria" placeholder="Rua João...">
+                </div>
+                <div class="col-md-2 mb-3">
+                  <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="#">Procurar</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 order-md-1">
+            <div id="map"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+      </div>
+
+
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+      </footer>
+
+    </main>
+
+
+    
+    <script>
+
+      function initMap() {
+        var uluru = {lat: -23.9663396, lng: -46.341786};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+
+        var contentString = '<div><a href="padaria.html">'+
+          '<img src="imagens/ico_padaria.jpg" alt="logo padaria" class="img-fluid" '+
+          'sytle="height:auto;width:auto;margin:auto;">'+
+          '<p>Padaria Giardino</p></a></div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 200
+        });
+
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: 'Uluru (Ayers Rock)'
+        });
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFojEiZEbyRWMVUqobac7dsgk63YS0Z_g&callback=initMap"></script>
+
+  </body>
+</html>

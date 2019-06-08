@@ -1,0 +1,129 @@
+﻿
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Padaria Online</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/carousel.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      
+body {
+padding-top:0px;
+}
+.color_home {
+background-color:#E6B96B;
+}.logo_site {
+min-width: 100%;
+height: 120px;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 color_home border-bottom shadow-sm">
+      <p class="my-0 mr-md-auto font-weight-normal">
+        <a class="p-2 text-dark" href="index.html">
+          <img class="logo_site" src="imagens/logo_site.png"/>
+        </a>
+      </p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html">Home</a>
+      </nav>
+      <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="login.html">Entrar</a>
+    </div>
+
+    <main role="main"> 
+
+      <div class="py-5 container">
+          
+        <div class="row">
+
+          <div class="col-md-12 order-md-1">
+            <h4 class="mb-3">Cadastre sua padaria</h4>
+            <form class="needs-validation" novalidate>
+              
+              <div class="mb-3 ">
+                <label for="primeiroNome">Nome da padaria</label>
+                <input type="text" class="form-control" id="primeiroNome" placeholder="Padaria da esquina">
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email">Email de contato</label>
+                  <input type="email" class="form-control" id="email" placeholder="contato@exemplo.com">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email">Telefone de contato</label>
+                  <input type="email" class="form-control" id="email" placeholder="contato@exemplo.com">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="endereco">Endereço do local <span class="text-muted">(Opcional)</span></label></label>
+                <input type="text" class="form-control" id="endereco" placeholder="Rua São João, nº 00">
+              </div>
+  
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="pais">País</label>
+                  <select class="custom-select d-block w-100" id="pais">
+                    <option value="">Escolha...</option>
+                    <option>Brasil</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="estado">Estado</label>
+                  <select class="custom-select d-block w-100" id="estado">
+                    <option value="">Escolha...</option>
+                    <option>São Paulo</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="cep">CEP</label>
+                  <input type="text" class="form-control" id="cep" placeholder="">                  
+                </div>
+              </div>
+             <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="primeiroNome">Senha</label>
+                  <input type="password" class="form-control" id="senha">
+                </div>
+             <div class="col-md-6 mb-3">
+                  <label for="primeiroNome">Repita Senha</label>
+                  <input type="password" class="form-control" id="senha_repita">
+                </div>
+              </div>
+              
+              <hr class="mb-4">
+              
+              
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar padaria</button>
+              
+            </form>
+          </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+      </div>
+
+
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+      </footer>
+
+    </main>
+
+  </body>
+</html>
