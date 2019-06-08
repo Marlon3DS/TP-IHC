@@ -1,185 +1,241 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Padaria Online</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/carousel.css" rel="stylesheet" type="text/css" />
-
-
-  <style type="text/css">
-    body {
-      padding-top: 0px;
-    }
-
-    .color_home {
-      background-color: #E6B96B;
-    }
-
-    .logo_site {
-      min-width: 100%;
-      height: 120px;
-    }
-  </style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="TP de IHC - Professor Vagner - Fatec 2019">
+    <meta name="author" content="Hélio Florença">
+    <title>Padaria Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 color_home border-bottom shadow-sm">
-    <p class="my-0 mr-md-auto font-weight-normal">
-      <a class="p-2 text-dark" href="index.html">
-        <img class="logo_site" src="imagens/logo_site.png" />
-      </a>
-    </p>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="btn btn-dark" href="encontrar.html">Encontrar Padaria</a>
-      <a class="btn btn-outline-dark" href="cadastrar.html">Cadastrar Padaria</a>
-    </nav>
-    <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="login.html">Entrar</a>
-  </div>
-  <main role="main">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="first-slide" src="http://maxpadaria.com.br/wp-content/uploads/2015/02/bannermaxpadaria.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <p><a class="btn btn-lg btn-primary" href="padaria.html" role="button">ver mais</a></p>
+    <header class="color_home">
+        <div class="container">
+            <!--Navbar -->
+            <nav class="navbar navbar-expand-md navbar-light ">
+
+                <div class="navbar-brand collapse navbar-collapse">
+                    <img src="imagens/brand.png" alt="Logo Padaria Online">
+                    <div class="texto">
+                        <h1>Padaria Online</h1>
+                        <p>Pão quentinho a qualquer hora</p>
+                    </div>
+                </div>
+                <div class="navbar navbar-toggler center" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="imagens/brand.png" alt="Logo Padaria Online">
+                    <div class="texto">
+                        <h1>Padaria Online</h1>
+                        <p>Pão quentinho a qualquer hora</p>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <span class="nav-link"><strong>Home</strong>
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="encontrar.html">Encontrar Padaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastrar.html">Cadastrar Padaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrinho.html">Carrinho</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item avatar dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" id="avatar"
+                                    class="rounded-circle z-depth-0" alt="avatar image">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary color_submenu submenu_texto"
+                                aria-labelledby="navbarDropdownMenuLink-55">
+                                <h5 class="dropdown-header">Fulana de Tal</h5>
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">
+                                    Meus pedidos
+                                    <span class="badge badge-pill badge-danger">1</span>
+                                </a>
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--/.Navbar -->
+        </div>
+    </header>
+
+
+
+
+
+    <main role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide"
+                        src="http://maxpadaria.com.br/wp-content/uploads/2015/02/bannermaxpadaria.jpg"
+                        alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <p><a class="btn btn-lg btn-primary" href="padaria.html" role="button">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide"
+                        src="http://maxpadaria.com.br/wp-content/uploads/2015/02/bannermaxpadaria2.jpg"
+                        alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <p><a class="btn btn-lg btn-primary" href="padaria.html" role="button">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide"
+                        src="http://www.panificadorakennedy.com.br/wp-content/uploads/2018/10/banners-padaria-kennedy-3-PAES.jpg"
+                        alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <p><a class="btn btn-lg btn-primary" href="padaria.html" role="button">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Voltar</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Avançar</span>
+            </a>
         </div>
-        <div class="carousel-item">
-          <img class="second-slide" src="http://maxpadaria.com.br/wp-content/uploads/2015/02/bannermaxpadaria2.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption text-right">
-              <p><a class="btn btn-lg btn-primary" href="padaria.html" role="button">ver mais</a></p>
+        <!-- Mensagens de marketing falando mais sobre o site e suas qualidades-->
+        <div class="container marketing">
+            <div class="row featurette">
+                <div class="col-md-7">
+
+                    <h2 class="featurette-heading">Encontre sua padaria de prefência.
+                        <span class="text-muted">Faça seu pedido!</span></h2>
+
+                    <p class="lead">Não perca mais seu tempo em filas! Escolha os produtos que você gostaria, faça
+                        seu
+                        pedido e
+                        retire no horário programado!
+                    </p>
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto"
+                        src="https://st3.depositphotos.com/6110210/19146/v/1600/depositphotos_191466014-stock-illustration-vector-horizontal-web-banner-templates.jpg"
+                        alt="Generic placeholder image">
+
+                </div>
+
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="third-slide"
-            src="http://www.panificadorakennedy.com.br/wp-content/uploads/2018/10/banners-padaria-kennedy-3-PAES.jpg"
-            alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <p><a class="btn btn-lg btn-primary" href="padaria.html" role="button">ver mais</a></p>
+
+
+            <hr class="featurette-divider">
+
+
+            <div class="row featurette">
+
+                <div class="col-md-7 order-md-2">
+
+                    <h2 class="featurette-heading">Cadastre-se!<span class="text-muted"> Escolha sua forma de
+                            pagamento!</span>
+                    </h2>
+
+                    <p class="lead">Você pode pagar com cartão de crédito de várias bandeiras, transferência
+                        bancária,
+                        entre
+                        outras formas!
+                    </p>
+
+                </div>
+
+                <div class="col-md-5 order-md">
+                    <img class=" featurette-image img-fluid mx-auto"
+                        src="https://lojas.dia.com.br/cache/ofertas/2407/t1-campo-limpo-130936.png"
+                        alt="Generic placeholder image">
+                </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Voltar</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Avançar</span>
-      </a>
-    </div>
-<!-- Mensagens de marketing falando mais sobre o site e suas qualidades-->
-    <div class="container marketing">
-      <div class="row featurette">
-        <div class="col-md-7">
-
-          <h2 class="featurette-heading">Encontre sua padaria de prefência.
-            <span class="text-muted">Faça seu pedido!</span></h2>
-
-          <p class="lead">Não perca mais seu tempo em filas! Escolha os produtos que você gostaria, faça seu pedido e
-            retire no horário programado!
-          </p>
-
-        </div>
-
-        <div class="col-md-5">
-
-          <img class="featurette-image img-fluid mx-auto"
-            src="https://st3.depositphotos.com/6110210/19146/v/1600/depositphotos_191466014-stock-illustration-vector-horizontal-web-banner-templates.jpg"
-            alt="Generic placeholder image">
-
-        </div>
-
-      </div>
 
 
-      <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
 
-      <div class="row featurette">
+            <div class="row featurette">
 
-        <div class="col-md-7 order-md-2">
+                <div class="col-md-7">
 
-          <h2 class="featurette-heading">Cadastre-se!<span class="text-muted"> Escolha sua forma de pagamento!</span>
-          </h2>
+                    <h2 class="featurette-heading">Agende a retirada de sua compra. <span class="text-muted"> Não
+                            fique
+                            mais em
+                            filas!</span></h2>
 
-          <p class="lead">Você pode pagar com cartão de crédito de várias bandeiras, transferência bancária, entre
-            outras formas!
-          </p>
+                    <p class="lead">Após pagamento, você poderá escolher um horário e dia de retirada de encomendas
+                        como
+                        bolos,
+                        salgados ou até o pãozinho de cada dia...
+                    </p>
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <img class="featurette-image img-fluid mx-auto"
+                        src="https://st2.depositphotos.com/2864463/5914/v/950/depositphotos_59145149-stock-illustration-flat-concepts-for-dishes-and.jpg"
+                        alt="Generic placeholder image">
+
+                </div>
+
+            </div>
+
+
+            <hr class="featurette-divider">
+
 
         </div>
 
-        <div class="col-md-5 order-md">
-          <img class=" featurette-image img-fluid mx-auto" src="https://lojas.dia.com.br/cache/ofertas/2407/t1-campo-limpo-130936.png" alt="Generic placeholder image">
-        </div>
 
-      </div>
+        <footer class="container">
 
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
 
-      <hr class="featurette-divider">
+            <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a
+                    href="#">Termos
+                </a></p>
 
+        </footer>
 
-      <div class="row featurette">
-
-        <div class="col-md-7">
-
-          <h2 class="featurette-heading">Agende a retirada de sua compra. <span class="text-muted"> Não fique mais em
-              filas!</span></h2>
-
-          <p class="lead">Após pagamento, você poderá escolher um horário e dia de retirada de encomendas como bolos,
-            salgados ou até o pãozinho de cada dia...
-          </p>
-
-        </div>
-
-        <div class="col-md-5">
-
-          <img class="featurette-image img-fluid mx-auto"
-            src="https://st2.depositphotos.com/2864463/5914/v/950/depositphotos_59145149-stock-illustration-flat-concepts-for-dishes-and.jpg"
-            alt="Generic placeholder image">
-
-        </div>
-
-      </div>
-
-
-      <hr class="featurette-divider">
-
-
-    </div>
-
-
-    <footer class="container">
-
-      <p class="float-right"><a href="#">Voltar ao topo</a></p>
-
-      <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos
-        </a></p>
-
-    </footer>
-
-  </main>
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </main>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Molle:400i&display=swap');
+
+body {
+    padding-top: 0px;
+}
+
+.color_home {
+    background-color: #E7B96D;
+}
+.color_submenu {
+    background-color: #3E3E3D;
+}
+.submenu_texto a{
+    color: #E7B96D;
+    font-size: 0.75em;
+}
+.submenu_texto h5{
+    color: #ccffcc;
+}
+
+.logo_site {
+    min-width: 100%;
+    height: 120px;
+}
+
+#avatar{
+    width: 48px;
+    height: 48px;
+}
+
+.texto h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+}
+.texto p{
+    font-family: 'Bad Script', cursive;
+    font-size: 0.75em;
+    position: relative;
+    top: -4px;
+}
+.texto h1, .texto p{
+    padding: 0;
+    margin:0;
+    color: #3E3E3D;
+}
+
+.navbar-brand a, .texto{
+    display: inline-block;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.ver{
+    border: 1px solid red;
+}

@@ -1,209 +1,281 @@
 ﻿<!doctype html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="TP de IHC - Professor Vagner - Fatec 2019">
+    <meta name="author" content="Hélio Florença">
     <title>Padaria Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/carousel.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <style type="text/css">
-body {
-padding-top:0px;
-}
-.color_home {
-background-color:#E6B96B;
-}.logo_site {
-min-width: 100%;
-height: 120px;
-}
-    </style>
-  </head>
-  <body>
+<body>
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 color_home border-bottom shadow-sm">
-      <p class="my-0 mr-md-auto font-weight-normal">
-        <a class="p-2 text-dark" href="index.html">
-          <img class="logo_site" src="imagens/logo_site.png"/>
-        </a>
-      </p>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="index.html">Home</a>
-        <a class="p-2 text-dark" href="encontrar.html">Encontrar Padaria</a>
-      </nav>
-    </div>
+    <header class="color_home">
+        <div class="container">
+            <!--Navbar -->
+            <nav class="navbar navbar-expand-md navbar-light ">
 
-<div class="container">
-  <div class="row">
-      <div class="p-2 px-md-2 bg-white border-bottom shadow-sm">     
-        <div class="img">
-          <img class="logo_padaria" src="imagens/logo_padaria.png"/> 
-        <div>
-      </div>
-   </div>
-</div>
-           
-    <main role="main"> 
- 
-       <div class="py-5 container">
-          
-        <div class="row">
-
-          <div class="col-md-12 order-md-1">
-            <h4 class="mb-3">Encontrar produtos</h4>
-            <form class="needs-validation" novalidate>
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <select class="custom-select d-block w-100" id="categoria">
-                    <option value="">Selecione uma categoria...</option>
-                    <option>Achocolatados</option>
-                    <option>Pão de Alho</option>
-                  </select>
+                <a class="navbar-brand collapse navbar-collapse" href="index.html">
+                    <img src="imagens/brand.png" alt="Logo Padaria Online">
+                    <div class="texto">
+                        <h1>Padaria Online</h1>
+                        <p>Pão quentinho a qualquer hora</p>
+                    </div>
+                </a>
+                <div class="navbar navbar-toggler center" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="imagens/brand.png" alt="Logo Padaria Online">
+                    <div class="texto">
+                        <h1>Padaria Online</h1>
+                        <p>Pão quentinho a qualquer hora</p>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <input type="text" class="form-control" id="sobrenome" placeholder="Nome do produto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="encontrar.html">Encontrar Padaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastrar.html">Cadastrar Padaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrinho.html">Carrinho</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item avatar dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" id="avatar"
+                                    class="rounded-circle z-depth-0" alt="avatar image">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary color_submenu submenu_texto"
+                                aria-labelledby="navbarDropdownMenuLink-55">
+                                <h5 class="dropdown-header">Fulana de Tal</h5>
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">
+                                    Meus pedidos
+                                    <span class="badge badge-pill badge-danger">1</span>
+                                </a>
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-2 mb-3">
-                  <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="#">Procurar</a>
-                </div>
-              </div>
-
-              <hr class="mb-4">
-              
-            </form>
-          </div>
-          
+            </nav>
+            <!--/.Navbar -->
         </div>
+    </header>
 
+    <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="http://imagem.band.com.br/95/f_233195.jpg" alt="Card image cap">
-              <div class="card-body">
-                <div class="mb-1 text-muted">Pão Francês</div>
-                <p class="card-text">Uma pequena descrição do produto, como uma introdução mais natural ao conteúdo adicional.</p>
-                <small class="text-muted">Preço: R$10,49 kg</small>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-space btn-danger btn-xs">Remover</button>
-                    <button type="button" class="btn btn-space btn-success btn-xs">Adicionar</button>
-                  </div>
+            <div class="p-2 px-md-2 bg-white border-bottom shadow-sm">
+                <div class="img">
+                    <img class="logo_padaria" src="imagens/logo_padaria.png" />
+                    <div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="https://padariabrasileira.com.br/wp-content/uploads/2017/03/19866-Festival-de-sanduiches-de-padoca-2017_BANNER-PROMOCIONAL.jpg" alt="Card image cap">
-              <div class="card-body">
-                <div class="mb-1 text-muted">Pão Francês</div>
-                <p class="card-text">Uma pequena descrição do produto, como uma introdução mais natural ao conteúdo adicional.</p>
-                <small class="text-muted">Preço: R$10,49 kg</small>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-space btn-danger btn-xs">Remover</button>
-                    <button type="button" class="btn btn-space btn-success btn-xs">Adicionar</button>
-                  </div>
+
+            <main role="main">
+
+                <div class="py-5 container">
+
+                    <div class="row">
+
+                        <div class="col-md-12 order-md-1">
+                            <h4 class="mb-3">Encontrar produtos</h4>
+                            <form class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <select class="custom-select d-block w-100" id="categoria">
+                                            <option value="">Selecione uma categoria...</option>
+                                            <option>Achocolatados</option>
+                                            <option>Pão de Alho</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" id="sobrenome"
+                                            placeholder="Nome do produto">
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="#">Procurar</a>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4">
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src="http://imagem.band.com.br/95/f_233195.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="mb-1 text-muted">Pão Francês</div>
+                                    <p class="card-text">Uma pequena descrição do produto, como uma introdução mais
+                                        natural ao conteúdo adicional.</p>
+                                    <small class="text-muted">Preço: R$10,49 kg</small>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn btn-space btn-danger btn-xs">Remover</button>
+                                            <button type="button"
+                                                class="btn btn-space btn-success btn-xs">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top"
+                                    src="https://padariabrasileira.com.br/wp-content/uploads/2017/03/19866-Festival-de-sanduiches-de-padoca-2017_BANNER-PROMOCIONAL.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="mb-1 text-muted">Pão Francês</div>
+                                    <p class="card-text">Uma pequena descrição do produto, como uma introdução mais
+                                        natural ao conteúdo adicional.</p>
+                                    <small class="text-muted">Preço: R$10,49 kg</small>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn btn-space btn-danger btn-xs">Remover</button>
+                                            <button type="button"
+                                                class="btn btn-space btn-success btn-xs">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top"
+                                    src="https://a4.vnda.com.br/bolodamadre/2018/11/27/17_23_54_656_banner_nutelindo.jpg?1543339434"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="mb-1 text-muted">Pão Francês</div>
+                                    <p class="card-text">Uma pequena descrição do produto, como uma introdução mais
+                                        natural ao conteúdo adicional.</p>
+                                    <small class="text-muted">Preço: R$10,49 kg</small>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn btn-space btn-danger btn-xs">Remover</button>
+                                            <button type="button"
+                                                class="btn btn-space btn-success btn-xs">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src="http://imagem.band.com.br/95/f_233195.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="mb-1 text-muted">Pão Francês</div>
+                                    <p class="card-text">Uma pequena descrição do produto, como uma introdução mais
+                                        natural ao conteúdo adicional.</p>
+                                    <small class="text-muted">Preço: R$10,49 kg</small>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn btn-space btn-danger btn-xs">Remover</button>
+                                            <button type="button"
+                                                class="btn btn-space btn-success btn-xs">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top"
+                                    src="https://padariabrasileira.com.br/wp-content/uploads/2017/03/19866-Festival-de-sanduiches-de-padoca-2017_BANNER-PROMOCIONAL.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="mb-1 text-muted">Pão Francês</div>
+                                    <p class="card-text">Uma pequena descrição do produto, como uma introdução mais
+                                        natural ao conteúdo adicional.</p>
+                                    <small class="text-muted">Preço: R$10,49 kg</small>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn btn-space btn-danger btn-xs">Remover</button>
+                                            <button type="button"
+                                                class="btn btn-space btn-success btn-xs">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top"
+                                    src="https://a4.vnda.com.br/bolodamadre/2018/11/27/17_23_54_656_banner_nutelindo.jpg?1543339434"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="mb-1 text-muted">Pão Francês</div>
+                                    <p class="card-text">Uma pequena descrição do produto, como uma introdução mais
+                                        natural ao conteúdo adicional.</p>
+                                    <small class="text-muted">Preço: R$10,49 kg</small>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button"
+                                                class="btn btn-space btn-danger btn-xs">Remover</button>
+                                            <button type="button"
+                                                class="btn btn-space btn-success btn-xs">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mb-1 text-muted">Total Pedido: R$39,85</div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-space btn-xs">Limpar</button>
+                                    <a href="carrinho.html" class="btn btn-space btn-success btn-xs">Finalizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="https://a4.vnda.com.br/bolodamadre/2018/11/27/17_23_54_656_banner_nutelindo.jpg?1543339434" alt="Card image cap">
-              <div class="card-body">
-                <div class="mb-1 text-muted">Pão Francês</div>
-                <p class="card-text">Uma pequena descrição do produto, como uma introdução mais natural ao conteúdo adicional.</p>
-                <small class="text-muted">Preço: R$10,49 kg</small>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-space btn-danger btn-xs">Remover</button>
-                    <button type="button" class="btn btn-space btn-success btn-xs">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="http://imagem.band.com.br/95/f_233195.jpg" alt="Card image cap">
-              <div class="card-body">
-                <div class="mb-1 text-muted">Pão Francês</div>
-                <p class="card-text">Uma pequena descrição do produto, como uma introdução mais natural ao conteúdo adicional.</p>
-                <small class="text-muted">Preço: R$10,49 kg</small>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-space btn-danger btn-xs">Remover</button>
-                    <button type="button" class="btn btn-space btn-success btn-xs">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="https://padariabrasileira.com.br/wp-content/uploads/2017/03/19866-Festival-de-sanduiches-de-padoca-2017_BANNER-PROMOCIONAL.jpg" alt="Card image cap">
-              <div class="card-body">
-                <div class="mb-1 text-muted">Pão Francês</div>
-                <p class="card-text">Uma pequena descrição do produto, como uma introdução mais natural ao conteúdo adicional.</p>
-                <small class="text-muted">Preço: R$10,49 kg</small>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-space btn-danger btn-xs">Remover</button>
-                    <button type="button" class="btn btn-space btn-success btn-xs">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="https://a4.vnda.com.br/bolodamadre/2018/11/27/17_23_54_656_banner_nutelindo.jpg?1543339434" alt="Card image cap">
-              <div class="card-body">
-                <div class="mb-1 text-muted">Pão Francês</div>
-                <p class="card-text">Uma pequena descrição do produto, como uma introdução mais natural ao conteúdo adicional.</p>
-                <small class="text-muted">Preço: R$10,49 kg</small>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-space btn-danger btn-xs">Remover</button>
-                    <button type="button" class="btn btn-space btn-success btn-xs">Adicionar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div>
-
-        <hr class="mb-4">
-
-        <div class="row">
-          <div class="col-md-12"> 
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="mb-1 text-muted">Total Pedido: R$39,85</div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-space btn-xs">Limpar</button>
-                <a href="carrinho.html" class="btn btn-space btn-success btn-xs">Finalizar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
 
 
-      <footer class="container">
-        <p class="float-right"><a href="#">Voltar ao topo</a></p>
-        <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
-      </footer>
+                <footer class="container">
+                    <p class="float-right"><a href="#">Voltar ao topo</a></p>
+                    <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a
+                            href="#">Termos</a></p>
+                </footer>
 
-    </main>
+            </main>
 
 
-  </body>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </html>

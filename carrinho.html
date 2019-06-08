@@ -1,202 +1,247 @@
 ﻿<!doctype html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="TP de IHC - Professor Vagner - Fatec 2019">
+    <meta name="author" content="Hélio Florença">
     <title>Padaria Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/carousel.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <style type="text/css">
-      
-body {
-padding-top:0px;
-}
-.color_home {
-background-color:#E6B96B;
-}.logo_site {
-min-width: 100%;
-height: 120px;
-}
+<body>
 
-    </style>
-  </head>
-  <body>
+    <header class="color_home">
+        <div class="container">
+            <!--Navbar -->
+            <nav class="navbar navbar-expand-md navbar-light ">
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 color_home border-bottom shadow-sm">
-      <p class="my-0 mr-md-auto font-weight-normal">
-        <a class="p-2 text-dark" href="index.html">
-          <img class="logo_site" src="imagens/logo_site.png"/>
-        </a>
-      </p>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="index.html">Home</a>
-      </nav>
-      <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="login.html">Entrar</a>
-    </div>
-
-    <main role="main"> 
-
-      <div class="py-5 container">
-          
-        <div class="row">
-
-          <div class="col-md-4 order-md-2 mb-4">
-            <h4 class="d-flex justify-content-between align-items-center mb-3">
-              <span class="text-muted">Pagamento</span>
-            </h4>
-            <form class="needs-validation" novalidate>
-  
-                <div class="row">
-                  <div class="col-md-12 mb-3">
-                    <label for="estado">Forma de pagamento</label>
-                    <select class="custom-select d-block w-100" id="estado">
-                      <option value="">Escolha um pagamento</option>
-                      <option>Forma de pagamento 1</option>
-                    </select>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <label for="sobrenome">Nome do cartão</label>
-                    <input type="text" class="form-control" id="senha_login">
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <label for="sobrenome">Número do cartão</label>
-                    <input type="text" class="form-control" id="senha_login">
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="sobrenome">Validade</label>
-                    <input type="text" class="form-control" id="senha_login">
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="sobrenome">CVV</label>
-                    <input type="text" class="form-control" id="senha_login">
-                  </div>
-                  <div class="col-md-12 mb-3 ml-4">
-                    <input type="checkbox" class="custom-control-input" id="mesmo-endereco">
-                    <label class="custom-control-label" for="mesmo-endereco">Salvar Cartão.</label>
-                  </div>
+                <a class="navbar-brand collapse navbar-collapse" href="index.html">
+                    <img src="imagens/brand.png" alt="Logo Padaria Online">
+                    <div class="texto">
+                        <h1>Padaria Online</h1>
+                        <p>Pão quentinho a qualquer hora</p>
+                    </div>
+                </a>
+                <div class="navbar navbar-toggler center" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="imagens/brand.png" alt="Logo Padaria Online">
+                    <div class="texto">
+                        <h1>Padaria Online</h1>
+                        <p>Pão quentinho a qualquer hora</p>
+                    </div>
                 </div>
-              
-                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success btn-lg btn-block" type="button">Finalizar pedido</button>
-                
-              </form>
-          </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="encontrar.html">Encontrar Padaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastrar.html">Cadastrar Padaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link"><strong>Carrinho</strong>
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item avatar dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" id="avatar"
+                                    class="rounded-circle z-depth-0" alt="avatar image">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary color_submenu submenu_texto"
+                                aria-labelledby="navbarDropdownMenuLink-55">
+                                <h5 class="dropdown-header">Fulana de Tal</h5>
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">
+                                    Meus pedidos
+                                    <span class="badge badge-pill badge-danger">1</span>
+                                </a>
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--/.Navbar -->
+        </div>
+    </header>
 
-          <div class="col-md-8 order-md-1">
-            <h4 class="mb-3">Carrinho</h4>
-            
-            <div class="table-responsive">
-              <table class="table table-striped table-sm">
-                <thead>
-                  <tr>
-                    <th>N°</th>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço unidade</th>
-                    <th>Total</th>
-                    <th>Ações</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>00345 - Pão Francês</td>
-                    <td>500gr</td>
-                    <td>R$10,00</td>
-                    <td>R$5,00</td>
-                    <td>
-                      <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>00345 - Pão Francês</td>
-                    <td>500gr</td>
-                    <td>R$10,00</td>
-                    <td>R$5,00</td>
-                    <td>
-                      <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>00345 - Pão Francês</td>
-                    <td>500gr</td>
-                    <td>R$10,00</td>
-                    <td>R$5,00</td>
-                    <td>
-                      <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>00345 - Pão Francês</td>
-                    <td>500gr</td>
-                    <td>R$10,00</td>
-                    <td>R$5,00</td>
-                    <td>
-                      <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>00345 - Pão Francês</td>
-                    <td>500gr</td>
-                    <td>R$10,00</td>
-                    <td>R$5,00</td>
-                    <td>
-                      <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
-                    </td>
-                  </tr>                    
-                </tbody>
-              </table>
+    <main role="main">
+
+        <div class="py-5 container">
+
+            <div class="row">
+
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Pagamento</span>
+                    </h4>
+                    <form class="needs-validation" novalidate>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="estado">Forma de pagamento</label>
+                                <select class="custom-select d-block w-100" id="estado">
+                                    <option value="">Escolha um pagamento</option>
+                                    <option>Forma de pagamento 1</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="sobrenome">Nome do cartão</label>
+                                <input type="text" class="form-control" id="senha_login">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="sobrenome">Número do cartão</label>
+                                <input type="text" class="form-control" id="senha_login">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="sobrenome">Validade</label>
+                                <input type="text" class="form-control" id="senha_login">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="sobrenome">CVV</label>
+                                <input type="text" class="form-control" id="senha_login">
+                            </div>
+                            <div class="col-md-12 mb-3 ml-4">
+                                <input type="checkbox" class="custom-control-input" id="mesmo-endereco">
+                                <label class="custom-control-label" for="mesmo-endereco">Salvar Cartão.</label>
+                            </div>
+                        </div>
+
+                        <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success btn-lg btn-block"
+                            type="button">Finalizar pedido</button>
+
+                    </form>
+                </div>
+
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Carrinho</h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço unidade</th>
+                                    <th>Total</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>00345 - Pão Francês</td>
+                                    <td>500gr</td>
+                                    <td>R$10,00</td>
+                                    <td>R$5,00</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>00345 - Pão Francês</td>
+                                    <td>500gr</td>
+                                    <td>R$10,00</td>
+                                    <td>R$5,00</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>00345 - Pão Francês</td>
+                                    <td>500gr</td>
+                                    <td>R$10,00</td>
+                                    <td>R$5,00</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>00345 - Pão Francês</td>
+                                    <td>500gr</td>
+                                    <td>R$10,00</td>
+                                    <td>R$5,00</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>00345 - Pão Francês</td>
+                                    <td>500gr</td>
+                                    <td>R$10,00</td>
+                                    <td>R$5,00</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm" type="submit">x</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <a href="padaria.html" class="btn btn-primary btn-lg btn-block">Continuar comprando</a>
+
+                </div>
+
             </div>
-          
-            <hr class="mb-4">
-            
-            <a  href="padaria.html" class="btn btn-primary btn-lg btn-block">Continuar comprando</a>
-            
-          </div>
+
+            <hr class="featurette-divider">
 
         </div>
 
-        <hr class="featurette-divider">
 
-      </div>
-
-
-      <footer class="container">
-        <p class="float-right"><a href="#">Voltar ao topo</a></p>
-        <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
-      </footer>
+        <footer class="container">
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
+            <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a
+                    href="#">Termos</a></p>
+        </footer>
 
     </main>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Pedido Finalizado</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div class="mb-1 text-muted">Obrigado pela preferencia!</div>
-              <p class="card-text">Seu pedido foi finalizado e esta aguardando você.</p>
-              <small class="text-muted">Pedido N°: 1021397949</small>
-          </div>
-          <div class="modal-footer">
-            <a href="index.html" class="btn btn-secondary">Fechar</a>
-          </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pedido Finalizado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-1 text-muted">Obrigado pela preferencia!</div>
+                    <p class="card-text">Seu pedido foi finalizado e esta aguardando você.</p>
+                    <small class="text-muted">Pedido N°: 1021397949</small>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" class="btn btn-secondary">Fechar</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
-  </body>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </html>
