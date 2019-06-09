@@ -77,73 +77,49 @@
         </div>
     </header>
 
-    <main role="main">
-        <div class="py-5 container">
+    <main role="main"class="h-100">
+        <div class="py-2 container">
             <div class="row">
-                <div class="col-md-12 order-md-1">
+                <div class="container">
                     <form class="needs-validation" novalidate>
-                        <div class="row">
-                            <div class="col-md-10 mb-3">
-                                <input type="email" class="form-control" id="procurar_padaaria" placeholder="Rua João...">
-                            </div>
-                            <div class="col-md-2 mb-3">
-                                <a class="my-md-0 mr-md-3 btn btn-outline-primary" href="#">Procurar</a>
+                        <div class="input-group mb-3">
+                            <input type="text" id="search" class="form-control" placeholder="Digite o nome ou o endereço da padaria"
+                                aria-label="Pesquise a Padaria" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" onclick="myFunction()">Pesquisar</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12 order-md-1">
+            <div class="row h-100">
+                <div class="container-fluid">
                     <div id="map"></div>
                 </div>
             </div>
 
-            <hr class="featurette-divider">
-
         </div>
-        <footer class="container">
-            <p class="float-right"><a href="#">Voltar ao topo</a></p>
-            <p>&copy; Padaria Online Companhia S.A., 2019 &middot; <a href="#">Privacidade</a> &middot; <a
-                    href="#">Termos</a></p>
-        </footer>
     </main>
+    <footer class="navbar fixed-bottom navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-text">
+                &copy; Padaria Online Companhia S.A., 2019 &middot; 
+                <a href="#">Privacidade</a> &middot; 
+                <a href="#">Termos</a>
+            </span>
+        </div>
+    </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBru_-TyZxOX1hx6htr1nHjMmgB41N3Z-Y&callback=initMap"></script>
 <script>
-    function initMap() {
-        var uluru = { lat: -23.9663396, lng: -46.341786 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 13,
-            center: uluru
-        });
-
-        var contentString = '<div><a href="padaria.html">' +
-            '<img src="imagens/ico_padaria.jpg" alt="logo padaria" class="img-fluid" ' +
-            'sytle="height:auto;width:auto;margin:auto;">' +
-            '<p>Padaria Giardino</p></a></div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 200
-        });
-
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-            title: 'Uluru (Ayers Rock)'
-        });
-
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
+    function myFunction() {
+        var query = document.getElementById("search").value;
+        get_Search(query);
     }
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBru_-TyZxOX1hx6htr1nHjMmgB41N3Z-Y&callback=initMap">
 </script>
 </html>
