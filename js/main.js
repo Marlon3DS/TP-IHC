@@ -92,19 +92,3 @@ function clearMarkers() {
 function getPos(pos) {
     return new google.maps.LatLng(pos.lat + _pos.lat, pos.lng + _pos.lng);
 }
-
-function get_Search(query) {
-    var request = {
-        query: query,
-        fields: ['name', 'geometry'],
-    };
-
-    var service = new google.maps.places.PlacesService(map);
-
-    service.findPlaceFromQuery(request, function (results, status) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-            map.setCenter(results[0].geometry.location);
-            drop();
-        }
-    });
-}

@@ -17,7 +17,7 @@
     <header class="color_home">
         <div class="container">
             <!--Navbar -->
-            <nav class="navbar navbar-expand-md navbar-light ">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light ">
 
                 <a class="navbar-brand collapse navbar-collapse" href="index.html">
                     <img src="imagens/brand.png" alt="Logo Padaria Online">
@@ -86,7 +86,7 @@
                             <input type="text" id="search" class="form-control" placeholder="Digite o nome ou o endereço da padaria"
                                 aria-label="Pesquise a Padaria" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" onclick="myFunction()">Pesquisar</button>
+                                <button class="btn btn-outline-secondary" type="button">Pesquisar</button>
                             </div>
                         </div>
                     </form>
@@ -116,10 +116,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBru_-TyZxOX1hx6htr1nHjMmgB41N3Z-Y&callback=initMap"></script>
-<script>
-    function myFunction() {
-        var query = document.getElementById("search").value;
-        get_Search(query);
-    }
-</script>
 </html>
